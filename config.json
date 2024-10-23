@@ -1,10 +1,10 @@
 {
-    "label": "Cal Tool",
-    "slug": "cal-tool",
-    "author": "Amplify Core Team",
-    "component_folder": "cal-tool",
-    "asset_folder": "cal-tool",
-    "description": "California Tool & Welding Supply",
+    "label": "Skeleton Theme",
+    "slug": "skeleton",
+    "author": "Development",
+    "component_folder": "skeleton",
+    "asset_folder": "skeleton",
+    "description": "This is a skeleton theme structure for amplify eCommerce System. Developer are free to customize the directory except public folder.",
     "screenshot" : "screenshot.jpg",
     "readme" : "README.md",
     "options": [

@@ -11,7 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sourceMaps(false, 'source-map')
+mix.sourceMaps(true, 'source-map')
+    .setPublicPath('./public')
+    .setResourceRoot('./assets')
     .copyDirectory('assets/images', 'public/images')
     .copyDirectory('assets/vendor/ckeditor', 'public/js/ckeditor')
     .copyDirectory('assets/vendor/css/minicolor', 'public/css/minicolor')
