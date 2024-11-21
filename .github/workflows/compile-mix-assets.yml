@@ -1,8 +1,8 @@
-name: Compile Mix Assets
+name: "Compile Mix Assets"
 
 on:
   pull_request:
-    branches: [ "master", "release/**" ]
+    branches: [ "main", "master", "release/**" ]
 
 permissions:
   contents: write
