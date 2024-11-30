@@ -71,10 +71,6 @@ select.form-control {
     flex: 1;
 }
 
-.x-banner-slider .slider-content {
-    width: 100%;
-}
-
 @media (max-width: $screen-sm) {
     .w-80 {
         width: 80%;
@@ -88,10 +84,6 @@ select.form-control {
 @media (min-width: $screen-md) {
     .d-md-none {
         display: none !important;
-    }
-
-    .x-banner-slider .slider-content {
-        width: 50%;
     }
 }
 
