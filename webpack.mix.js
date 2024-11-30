@@ -19,9 +19,6 @@ mix.sourceMaps(true, 'source-map')
     .copyDirectory('src/vendor/css/minicolor', 'dist/css/minicolor')
     .copyDirectory('src/fonts', 'dist/fonts')
     .copy('src/vendor/js/modernizr.min.js', 'dist/js/modernizr.min.js')
-    .copy('src/css/custom.css', 'dist/css/custom.css')
-    .copy('src/js/custom.js', 'dist/js/custom.js')
-    .copy('src/vendor/js/jquery.minicolors.min.js', 'dist/js/minicolors.js')
     .minify('src/js/scripts.js', 'dist/js/scripts.min.js')
     .combine([
         'src/vendor/js/jquery.min.js',
@@ -43,6 +40,7 @@ mix.sourceMaps(true, 'source-map')
         'src/vendor/js/moment.min.js',
         'src/vendor/js/daterangepicker.min.js',
         'src/vendor/datatable/datatables.min.js',
+        'src/vendor/js/jquery.minicolors.min.js',
     ], 'dist/js/vendor.min.js')
     .sass('src/scss/styles.scss', 'dist/css/styles.css')
     .minify('dist/css/styles.css', 'dist/css/styles.min.css')
@@ -56,4 +54,6 @@ mix.sourceMaps(true, 'source-map')
         'src/vendor/css/socicon.min.css',
         'src/vendor/css/daterangepicker.css',
         'src/vendor/datatable/datatables.min.css',
-    ], 'dist/css/vendor.min.css');
+        'src/vendor/css/minicolor/jquery.minicolors.css',
+    ], 'dist/css/vendor.css')
+    .minify('dist/css/vendor.css', 'dist/css/vendor.min.css');
